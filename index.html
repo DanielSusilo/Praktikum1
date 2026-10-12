@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f1e9">
+  <title>Profil Mahasiswa — Personal Card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Beranda"><span class="brand-mark">DS.</span><span>PERSONAL<br>PROFILE</span></a>
+      <div class="topbar-right"><span class="status-dot"></span><span> / 2026</span><button id="themeToggle" class="theme-toggle" type="button" aria-label="Aktifkan tema gelap" title="Ganti tema">◐</button></div>
+    </header>
+
+    <section class="profile-card" aria-labelledby="pageTitle">
+      <div class="profile-visual">
+        <div class="visual-top"><span>PROFILE</span><span>✳</span></div>
+        <div class="portrait-wrap">
+          <img src="C:\Users\danie\OneDrive\Dokumen\Semester 6\VCS\Praktikum 1\img\Foto.jpeg" alt="Foto mahasiswa" class="portrait" onerror="this.style.display='none';document.querySelector('.portrait-placeholder').style.display='flex'">
+          <div class="portrait-caption"><span>gn. Andong</span><span>kenali saya ↗</span></div>
+        </div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="sticker">HI<br>FRIENDS<span>✳</span></div>
+      </div>
+
+      <div class="profile-content">
+        <p class="eyebrow"><span class="eyebrow-line"></span> HELLO, WORLD!</p>
+        <h1 id="pageTitle">Profil<br><em>Mahasiswa.</em></h1>
+        <p class="intro">Small steps, big ideas. Kenali saya melalui informasi singkat di bawah ini.</p>
+
+        <div class="identity-grid">
+          <article class="identity-item">
+            <div class="item-top"><span class="item-number">01</span><span class="item-icon">↗</span></div>
+            <p class="field-label">NAMA LENGKAP</p>
+            <h2 id="studentName">Daniel Susilo</h2>
+          </article>
+          <article class="identity-item">
+            <div class="item-top"><span class="item-number">02</span><span class="item-icon">↗</span></div>
+            <p class="field-label">NOMOR INDUK MAHASISWA</p>
+            <h2 id="studentNim">G.231.23.0150</h2>
+          </article>
+          <article class="identity-item">
+            <div class="item-top"><span class="item-number">03</span><span class="item-icon">↗</span></div>
+            <p class="field-label">KELAS</p>
+            <h2 id="studentClass">Sore A</h2>
+          </article>
+          <article class="identity-item">
+            <div class="item-top"><span class="item-number">04</span><span class="item-icon">↗</span></div>
+            <p class="field-label">KELOMPOK</p>
+            <h2 id="studentGroup">A1</h2>
+          </article>
+        </div>
+    </section>
+
+    <footer class="page-footer"><span>STUDENT PROFILE / PRAKTIKUM 1</span></footer>
+  </main>
+</body>
+</html>
